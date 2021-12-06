@@ -205,6 +205,9 @@
   transform: translate( -50%, 0%);
 }
 
+.footerInfo div{
+  color: aliceblue;
+}
 /*그 링크 하이퍼링크 스타일 지정한거랑 돌아가는거 지정한거 
 .App-link {
   color: black;
