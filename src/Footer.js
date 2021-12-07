@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import logo from "./logo.svg";
 import profileLogo from "./Profile.svg";
 import "./App.css";
-import SpeedyemeButton from "./SpeedyemeButton.js";
+import SpeedyemeButton from "./pages/SpeedyemeButton.js";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-import Movie from "./Movie";
+import Movie from "./pages/Movie";
 
 
 //메인홈 하단 안내정보가 담긴 footer부분 컴포넌트입니다. 

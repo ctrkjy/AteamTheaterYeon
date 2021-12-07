@@ -3,9 +3,9 @@ import profileLogo from "./Profile.svg";
 import "./App.css";
 import img1 from "./AteamLogo.png";
 import React, { useState } from "react";
-import SpeedyemeButton from "./SpeedyemeButton.js";
+import SpeedyemeButton from "./pages/SpeedyemeButton.js";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-import Movie from "./Movie";
+import Movie from "./pages/Movie";
 import Footer from "./Footer";
 
 function App() {

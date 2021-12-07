@@ -6,14 +6,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./styles/styles.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Movie from "./Movie";
+import Movie from "./pages/Movie";
 import Header from "./Header";
 import Footer from "./Footer";
-import Homeimage from "./Homeimage";
-import Theater from "./Theater";
-import Yeme from "./Yeme";
-import Timetable from "./Timetable";
-import Mypage from "./Mypage";
+import Homeimage from "./pages/Homeimage";
+import Theater from "./pages/Theater";
+import Yeme from "./pages/Yeme";
+import Timetable from "./pages/Timetable";
+import Mypage from "./pages/Mypage";
 /*<Route path="/movie"><Movie/></Route>*/
 ReactDOM.render(
   <React.StrictMode>

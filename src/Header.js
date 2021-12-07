@@ -3,10 +3,10 @@ import profileLogo from "./Profile.svg";
 import "./App.css";
 import img1 from "./AteamLogo.png";
 import React, { useState } from "react";
-import SpeedyemeButton from "./SpeedyemeButton.js";
+import SpeedyemeButton from "./pages/SpeedyemeButton.js";
 import Footer from "./Footer";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-import Movie from "./Movie";
+import Movie from "./pages/Movie";
 
 function Header(){
     return(
