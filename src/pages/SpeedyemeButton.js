@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import "../App.css";
 
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 //메인홈화면 중앙의 흔들리는 빠른예매 버튼 컴포넌트 입니다. 

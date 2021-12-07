@@ -1,7 +1,7 @@
-import logo from "./logo.svg";
-import profileLogo from "./Profile.svg";
-import "./App.css";
-import img1 from "./AteamLogo.png";
+import logo from "../logo.svg";
+import profileLogo from "../Profile.svg";
+import "../App.css";
+import img1 from "../AteamLogo.png";
 import React, { useState } from "react";
 import SpeedyemeButton from "./SpeedyemeButton.js";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
