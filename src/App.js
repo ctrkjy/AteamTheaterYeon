@@ -3,28 +3,10 @@ import profileLogo from "./Profile.svg";
 import "./App.css";
 import img1 from "./AteamLogo.png";
 import React, { useState } from "react";
-
+import SpeedyemeButton from "./SpeedyemeButton.js";
+import Footer from "./Footer";
 //id로 위치선언 href=#으로 위치이동
 function App() {
-  function Button() {
-    const [btncl, setBtncl] = useState(false);
-    /*function changecolor() {
-      console.log("마우스커서가왔다갔다 ");
-      console.log(btncl);
-    }*/
-    return (
-      <a
-        onMouseOver={() => setBtncl(true)}
-        onMouseOut={() => setBtncl(false)}
-        style={{ borderColor: btncl ? "white" : "" }}
-        className="speed-yeme"
-        href="#"
-      >
-        <button>빠른예매</button>
-      </a>
-    );
-  }
-
   return (
     <div className="App">
       <header id="top" className="App-header">
@@ -60,42 +42,14 @@ function App() {
           <img src={img1}></img>
         </div>
         <i className="copy">가장 몰입되는 공간, 에이팀씨어터</i>
-
         <span>
-          <Button />
+          <SpeedyemeButton />
         </span>
       </div>
       <div className="temp"></div>
+      <Footer/>
 
-      <footer className="footer">
-        <a className="scrollup" href="#top">
-          TOP↑
-        </a>
-        <div className="footerBox">
-          <img src={img1} className="footerLogo"></img>
-          <div className="footerInfo">
-            <div>
       
-              <a>고객센터</a> 
-              <a>자주묻는질문</a>
-              <a>1:1문의</a>
-              <a>법적고지</a>
-              <a>회사소개</a>
-              <a>인재채용</a> 
-              <a>이용약관</a> 
-              <a>개인정보처리방침</a>
-            </div>
-            
-            
-              에이팀씨어터 안내 : 고객 센터로 전화 또는 이메일 문의를 주실 경우 상담을 도와 드리도록 하겠습니다 Tel:010 - 5872 - 6303 | E-mail:ctrkjy@naver.com 
-              
-              현금 등 구매에 관하여 구매안전(에스크로)서비스에 가입하여 고객님의 안전한 거래를 보장하고 있습니다.
-              경기도 안산시 상록구 한양대학로 55 학연산클러스터지원센터 Tel.031-400-4677 
-              대표자명 김정연 · 개인정보보호책임자 김정연 · 사업자등록번호 2001-12-26 · 통신판매업신고번호 제 1004호 COPYRIGHT © AteamTheater, Inc. All rights reserved
-            
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

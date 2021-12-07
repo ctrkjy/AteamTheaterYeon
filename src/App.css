@@ -183,7 +183,7 @@
 .scrollup {
   padding: 25px;
   display: block;
-  border-bottom: 1px solid aliceblue;
+  border-bottom: 1px solid rgb(211, 210, 210);
 }
 .footerLogo{
   filter: grayscale(100);
@@ -196,7 +196,7 @@
 }
 .footerInfo{
   background-color: rgb(8, 8, 8);
-  color: aliceblue;
+  color: rgb(211, 210, 210);
   font-weight: lighter;
   font-size: 1%;
   display: block;
@@ -205,8 +205,10 @@
   transform: translate( -50%, 0%);
 }
 
-.footerInfo div{
+.footerInfoLink{
   color: aliceblue;
+  font-weight: bold;
+  font-size: 1.7vh;
 }
 /*그 링크 하이퍼링크 스타일 지정한거랑 돌아가는거 지정한거 
 .App-link {
