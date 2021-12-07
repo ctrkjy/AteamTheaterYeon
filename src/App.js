@@ -5,52 +5,53 @@ import img1 from "./AteamLogo.png";
 import React, { useState } from "react";
 import SpeedyemeButton from "./SpeedyemeButton.js";
 import Footer from "./Footer";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import Movie from "./Movie";
 //id로 위치선언 href=#으로 위치이동
 function App() {
   return (
-    <div className="App">
-      <header id="top" className="App-header">
-        <div className="header-logo ">
-          <a href="#">
-            <h1>AteamTheater</h1>
-          </a>
-        </div>
-
-        <div className="header-GNB">
-          <ul>
-            <li>
-              <a href="#">영화</a>
-            </li>
-            <li>
-              <a href="#">예매</a>
-            </li>
-            <li>
-              <a href="#">극장</a>
-            </li>
-            <li>
-              <a href="#">상영시간표</a>
-            </li>
+      <div className="App">
+        <header id="top" className="App-header">
+          <div className="header-logo ">
             <a href="#">
-              <img src={profileLogo} className="profileLogo" />
+              <h1>AteamTheater</h1>
             </a>
-          </ul>
-        </div>
-      </header>
+          </div>
 
-      <div className="main-page">
-        <div className="main-image">
-          <img src={img1}></img>
+          <div className="header-GNB">
+            <ul>
+              <li>
+                <Link to="/movie">영화</Link>
+              </li>
+              <li>
+                <a href="#">예매</a>
+              </li>
+              <li>
+                <a href="#">극장</a>
+              </li>
+              <li>
+                <a href="#">상영시간표</a>
+              </li>
+              <a href="#">
+                <img src={profileLogo} className="profileLogo" />
+              </a>
+            </ul>
+          </div>
+        </header>
+
+        <div className="main-page">
+          <div className="main-image">
+            <img src={img1}></img>
+          </div>
+          <i className="copy">가장 몰입되는 공간, 에이팀씨어터</i>
+          <span>
+            <SpeedyemeButton />
+          </span>
         </div>
-        <i className="copy">가장 몰입되는 공간, 에이팀씨어터</i>
-        <span>
-          <SpeedyemeButton />
-        </span>
+        <div className="temp"></div>
+
+        <Footer />
       </div>
-      <div className="temp"></div>
-      <Footer/>
-
-      
-    </div>
   );
 }
 

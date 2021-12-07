@@ -1,4 +1,6 @@
 import img1 from "./AteamLogo.png";
+import React, { useState } from "react";
+
 
 //메인홈 하단 안내정보가 담긴 footer부분 컴포넌트입니다. 
 
