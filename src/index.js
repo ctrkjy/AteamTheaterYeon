@@ -14,17 +14,7 @@ import Theater from "./Theater";
 import Yeme from "./Yeme";
 import Timetable from "./Timetable";
 import Mypage from "./Mypage";
-/*<Route path="/movie">
-          <Movie/>
-                <Route exact to="/movie" component={Movie} />
-        </Route>
-        
-        
-        <Route path="/movie">
-          <Movie/>
-        </Route>
-        
-        */
+/*<Route path="/movie"><Movie/></Route>*/
 ReactDOM.render(
   <React.StrictMode>
     <Router>
