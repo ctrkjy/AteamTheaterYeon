@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css";
 //메인홈화면 중앙의 흔들리는 빠른예매 버튼 컴포넌트 입니다. 
 function SpeedyemeButton() {
     const [btncl, setBtncl] = useState(false);
@@ -14,7 +15,7 @@ function SpeedyemeButton() {
         className="speed-yeme"
         href="#"
       >
-        <button>빠른예매</button>
+        <button className="SpeedyemeButton">빠른예매</button>
       </a>
     );
   }
