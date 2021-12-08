@@ -186,7 +186,7 @@
 .footerInfo{
   color: rgb(211, 210, 210);
   font-weight: lighter;
-  font-size: 1%;
+  font-size: 1.2vh;
   display: block;
   margin-right: 5%;
   position: absolute;
@@ -196,5 +196,5 @@
 .footerInfoLink{
   color: aliceblue;
   font-weight: bold;
-  font-size: 1.5vh;
+  font-size: 1.6vh;
 }

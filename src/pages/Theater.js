@@ -1,6 +1,9 @@
-//1줄 전체지점 모음 / 2줄 해당지점 대문짝 3줄 3갈래 나뉨 라우터 말고 그냥 버튼만 놓고 싱글페이지에 아이디로 스크롤 이동 기본 극장 정보 표시 상영시간표 표시, 상영시간표로 넘어갈 수 있게도 설정
-// 한줄소개 시설안내 층별안내 교통 / 위치 안내 주차 안내 전화번호 안내
-// 관람료랑 우대정보 안내
+// 지점 배너는 지점을 선택하는 상단 배너에요. 지점은 영화관지점이 저장된리스트 
+//시설은 영화관 시설이 저장된 리스트 
+//극장페이지에서 지점별로 바뀔 부분은 "jijumBanner"의 "jijumtext"(현재 선택된 지점)
+//그리고 시설, 위치 정보 부분만 바뀌면 돼요.
+//PriceTable은 가격표라서 코드가 길어도 자세히 볼 필요 없어요 
+//styles폴더의 Theater.css로 디자인 했습니다 
 
 import "../styles/Theater.css";
 import React, { useState } from "react";
@@ -17,21 +20,17 @@ const siseol = [
   "장애인석",
   "일반상영관",
 ];
-//반복문 왜 안되냐 ~!
-//지점별 주소, 편의시설 연결 링크변경시 라우트 주소랑 편의시설 부분만 바뀌면 됨 
-//지도추가?
-//컴포넌트화 재사용 데이터 입력가능하게 
-function Theater() {
-  return (
-    <div>
-      <div className="jijumBanner">
+
+function JijumBanner(){
+  return(
+    <div className="jijumBanner">
         <div className="jijumBannerimg">
           <img src={theaterbanner}></img>
         </div>
         <div className="jijumList">
           <ul>
             <li>
-              <Link>{jijum[0]}</Link>
+              <Link >{jijum[0]}</Link>
             </li>
             <li>
               <Link>{jijum[1]}</Link>
@@ -49,43 +48,13 @@ function Theater() {
         </div>
         <h1 className="jijumtext">{jijum[0]}</h1>
       </div>
-      <div className="jijumInfo">
-        <a href="#info_1">
-          <button>극장정보</button>
-        </a>
-        <a href="#info_2">
-          <button>위치정보</button>
-        </a>
-        <a href="#info_3">
-          <button>관람료</button>
-        </a>
-        <h2 id="info_1">시설안내</h2>
-        <p>
-          품격을 높여주는 최고급 쇼파에서 고급화된 인테리어의 안락함을
-          즐겨보세요 전좌석 가죽시트, 핸드폰 충전이 가능한 '가장 진화한 컴포트관
-          (COMFORT)' 보유시설
-          <br />
-          <br />
-          가장 진화 된 입체음향, 차세대 영화관의 표준을 제시하는 MX관 (돌비
-          애트모스, 마이어 사운드, 와이드 시트)
-          <ul>
-            <li>{siseol[0]}</li>
 
-            <li>{siseol[1]}</li>
+  );
+}
 
-            <li>{siseol[2]}</li>
-
-            <li>{siseol[3]}</li>
-
-            <li>{siseol[4]}</li>
-
-            <li>{siseol[5]}</li>
-          </ul>
-        </p>
-        <h2 id="info_2">위치 및 교통 정보</h2>
-        <p>서울특별시 동대문구 왕산로 214 </p>
-        <h2 id="info_3">관람료</h2>
-        <div class="table-wrap">
+function PriceTable() {
+  return(
+    <div class="table-wrap">
           <table class="data-table a-c">
             <colgroup>
               <col />
@@ -143,6 +112,51 @@ function Theater() {
             </tbody>
           </table>
         </div>
+  );
+  
+}
+
+function Theater() {
+  return (
+    <div>
+      <JijumBanner/>
+      <div className="jijumInfo">
+        <a href="#info_1">
+          <button>극장정보</button>
+        </a>
+        <a href="#info_2">
+          <button>위치정보</button>
+        </a>
+        <a href="#info_3">
+          <button>관람료</button>
+        </a>
+        <h2 id="info_1">시설안내</h2>
+        <p>
+          품격을 높여주는 최고급 쇼파에서 고급화된 인테리어의 안락함을
+          즐겨보세요 전좌석 가죽시트, 핸드폰 충전이 가능한 '가장 진화한 컴포트관
+          (COMFORT)' 보유시설
+          <br />
+          <br />
+          가장 진화 된 입체음향, 차세대 영화관의 표준을 제시하는 MX관 (돌비
+          애트모스, 마이어 사운드, 와이드 시트)
+          <ul>
+            <li>{siseol[0]}</li>
+
+            <li>{siseol[1]}</li>
+
+            <li>{siseol[2]}</li>
+
+            <li>{siseol[3]}</li>
+
+            <li>{siseol[4]}</li>
+
+            <li>{siseol[5]}</li>
+          </ul>
+        </p>
+        <h2 id="info_2">위치 및 교통 정보</h2>
+        <p>서울특별시 동대문구 왕산로 214 </p>
+        <h2 id="info_3">관람료</h2>
+        <PriceTable/>
         <h3>요금제 </h3>
         <p>
           <ul>

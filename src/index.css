@@ -7,7 +7,7 @@ body {
   text-decoration: none;
   list-style: none;
   color: black;
-  font-family:  'Nanum Myeongjo',serif ;
+  font-family:  'Nanum Myeongjo',serif !important;
   font-weight: bold ;
   /*마진 이거 여백임 건들면 흰띠 생긴다 건들노노해 */
   -webkit-font-smoothing: antialiased;
