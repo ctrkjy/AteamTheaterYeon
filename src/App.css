@@ -184,7 +184,6 @@
   
 }
 .footerInfo{
-  background-color: rgb(8, 8, 8);
   color: rgb(211, 210, 210);
   font-weight: lighter;
   font-size: 1%;
@@ -197,5 +196,5 @@
 .footerInfoLink{
   color: aliceblue;
   font-weight: bold;
-  font-size: 1.7vh;
+  font-size: 1.5vh;
 }

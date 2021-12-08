@@ -7,4 +7,6 @@ function Timetable() {
   return (<div>Timetable</div>);
 }
 
+//모두 테이블화 
+
 export default Timetable;

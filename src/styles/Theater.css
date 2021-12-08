@@ -1,0 +1,158 @@
+
+.jijumBanner {
+    background-color: rgb(8, 7, 6) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    min-height: 150px;
+
+  }
+
+.jijumBannerimg {
+    background-color: rgb(8, 7, 6) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    display:inline-block;
+    z-index: 0;
+
+  }
+  
+
+.jijumList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    font-size: calc(5px + 1.8vmin);
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+
+}
+
+.jijumList ul {
+    z-index: 2;
+    height: 30px;
+    display: inline;
+    text-align: center;
+    top: 0%;
+    margin-bottom: 25%;
+    background-color: rgba(8, 7, 6, 0.856);
+
+  }
+
+.jijumList ul li {
+    color: white;
+    z-index: 1;
+    display: inline-block;
+    font-size: calc(4px + 1.0vmin);
+  }
+
+  .jijumList ul li a{
+    display: block;
+    color: rgb(160, 159, 159);
+    margin: 0vh 3vh;
+    letter-spacing: 1px;
+
+  }
+
+.jijumtext{
+    font-size: 4vh;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    margin-top: 2%;
+    z-index: 1;
+    
+}
+
+.jijumInfo{
+    margin: 1% 5%;
+    border: 0.5px solid rgb(70, 70, 70);
+    padding: 3% ;
+    list-style-type: square ;
+    
+}
+
+.jijumInfo button{
+    border:1px solid rgb(104, 0, 10);
+    color: rgb(104, 0, 10);
+    padding: 1% 11%;
+    font-weight: bold;
+    font-size: 2.5vh;
+
+}
+
+.jijumInfo h2{
+    font-size: 3vh;
+    font-weight: bold;
+    margin: 3% 7%;
+    text-align: left;
+}
+
+
+.jijumInfo h3{
+    font-size: 2vh;
+    font-weight: bold;
+    margin: 3% 7%;
+    text-align: left;
+}
+
+
+.jijumInfo p{
+    font-size: 1.7vh;
+    font-weight: normal;
+    margin: 1% 8%;
+    text-align: left;
+}
+
+
+.jijumInfo ul li{
+    font-size: 1.7vh;
+    font-weight: normal;
+    list-style-type: square ;
+    margin: 2%;
+    text-align: left;
+}
+
+.table-wrap{
+    position: relative;
+    letter-spacing: 1px;
+    
+    font-size: 1.7vh;
+    margin: 1% 8%;
+    text-align: left;
+    
+}
+
+.table-wrap col{
+    width:25%;
+}
+
+
+
+
+.table-wrap th {
+    position: relative;
+    border: 1px solid rgb(141, 141, 141);
+    background-color: rgb(235, 235, 235);
+    letter-spacing: 1px;
+    padding: 5%;
+}
+
+.table-wrap td {
+    position: relative;
+    border: 1px solid rgb(141, 141, 141);
+    letter-spacing: 1px;
+    padding: 5%;
+}
