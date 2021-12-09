@@ -2,8 +2,9 @@
 //시설은 영화관 시설이 저장된 리스트 
 //극장페이지에서 지점별로 바뀔 부분은 "jijumBanner"의 "jijumtext"(현재 선택된 지점)
 //그리고 시설, 위치 정보 부분만 바뀌면 돼요.
-//PriceTable은 가격표라서 코드가 길어도 자세히 볼 필요 없어요 
+//PriceTable은 가격표라서 코드가 길어도 자세히 볼 필요 없어요. 
 //styles폴더의 Theater.css로 디자인 했습니다 
+//1920*1080 모니터의 100%뷰 기준입니다 
 
 import "../styles/Theater.css";
 import React, { useState } from "react";
