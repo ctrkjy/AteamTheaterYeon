@@ -49,7 +49,6 @@ function JijumBanner(){
         </div>
         <h1 className="jijumtext">{jijum[0]}</h1>
       </div>
-
   );
 }
 
@@ -114,7 +113,6 @@ function PriceTable() {
           </table>
         </div>
   );
-  
 }
 
 function Theater() {
